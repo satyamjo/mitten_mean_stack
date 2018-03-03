@@ -75,9 +75,6 @@ app.post('/users', function(req, res, next){
 				 });		
 			});
 		});
-
-		
-	
 });
 
 app.put('/users/signin', function(req, res, next){

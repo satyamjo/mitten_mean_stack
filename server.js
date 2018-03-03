@@ -9,6 +9,8 @@ var app = express();
 var JWT_SECRET = 'catsmeow';
 
 var db = null;
+
+//Connecting to Mongodb
 MongoClient.connect("mongodb://localhost:27017/", function(err, dbconn){
 	if(!err) {
 		console.log("we are connected");

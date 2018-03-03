@@ -45,9 +45,7 @@ app.post('/meows', function(req, res, next){
 		    if (err) throw err;
 			return res.send();
 		 });
-	
-});
-
+	});
 app.put('/meows/remove', function(req, res, next){
 
 		var token = req.headers.authorization;

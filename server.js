@@ -20,9 +20,7 @@ MongoClient.connect("mongodb://localhost:27017/", function(err, dbconn){
 });
 
 app.use(bodyParser.json());
-
 app.use(express.static('public')); 
-
 app.get('/meows', function(req, res, next){
 
 	db.collection('meows', function(err, meowsCollection) {
